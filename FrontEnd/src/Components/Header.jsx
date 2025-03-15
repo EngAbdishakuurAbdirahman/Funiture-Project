@@ -19,7 +19,7 @@ function Header() {
                     <Link className="transition-transform duration-300 hover:scale-110  hover:text-[#DA4771]" to="/">Home</Link>
                     <Link className="transition-transform duration-300 hover:scale-110 hover:text-[#DA4771]" to="/about">About</Link>
                     <Link className="transition-transform duration-300 hover:scale-110 hover:text-[#DA4771]" to="/product">Product</Link>
-                    <Link className="transition-transform duration-300 hover:scale-110 hover:text-[#DA4771]" to="/contact">Contact</Link>
+                    <Link className="transition-transform duration-300 hover:scale-110 hover:text-[#DA4771]" to="/LoginPage">Contact</Link>
                 </nav>
                 
                 {/* Right Section */}
@@ -33,10 +33,15 @@ function Header() {
                         <i className="fa-solid fa-phone text-2xl text-[#183b50]"></i>
                         <a href="https://wa.me/+252616071080"><h4 className="text-[#183b50] font-thin">655315</h4></a>
                     </motion.div>
+
+                    <div className="">
+                    <Link className="transition-transform duration-300 hover:scale-110 hover:text-[#DA4771]" to="/LoginPage"><i class="fa-regular fa-circle-user text-4xl ml-9 text-[#183b50]"></i></Link>
+                    
+                    </div>
                     
                     {/* Cart */}
                     <Link to="/cart" className="relative">
-                        <motion.i className="fa-solid fa-cart-shopping text-3xl text-[#183b50] relative" initial={{ scale: 0.9 }} animate={{ scale: 1 }} transition={{ duration: 0.3, repeat: Infinity, repeatType: "reverse" }}>
+                        <motion.i className="fa-solid fa-cart-shopping mt-1 text-3xl text-[#183b50] relative" initial={{ scale: 0.9 }} animate={{ scale: 1 }} transition={{ duration: 0.3, repeat: Infinity, repeatType: "reverse" }}>
                             <span className="absolute -top-2 -right-2 bg-[#DA4771] text-white text-xs font-bold px-2 py-1 rounded-full">{cartValue.length}</span>
                         </motion.i>
                     </Link>
@@ -45,6 +50,8 @@ function Header() {
                     <div className="md:hidden cursor-pointer">
                         <i className="fa-solid fa-bars text-2xl text-[#183b50]"></i>
                     </div>
+
+                    
                 </div>
             </div>
             <hr className="border-gray-300" />

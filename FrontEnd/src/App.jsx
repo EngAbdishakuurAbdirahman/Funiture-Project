@@ -51,6 +51,7 @@ import SpecialLiving from './Pages/items/LivingRoom/SpecialLiving';
 import MaterialsSection from './Components/InsideHome/MaterialsSection';
 import ProductsGrid from './Components/InsideHome/ProductsGrid';
 import TestimonialCards from './Components/InsideHome/TestimonialCards';
+import LoginPage from './Pages/LoginPage';
 
 function App() {
   const location = useLocation(); // Hel URL-ka hada 
@@ -65,6 +66,11 @@ function App() {
         <Route path="/TestimonialCards" element={<TestimonialCards />} />
         <Route path="/MaterialsSection" element={<MaterialsSection />} />
         <Route path="/ProductsGrid" element={<ProductsGrid />} />
+
+
+        <Route path="/LoginPage" element={<LoginPage />} />
+
+
         <Route path="/about" element={<About />} />
         <Route path="/product" element={<Product />} />        
         <Route path="/prod2" element={<ProdList2 />} />
